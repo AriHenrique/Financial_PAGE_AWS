@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 5rem 1rem; /* Aumenta o padding para criar espaço em torno do conteúdo */
+    background-color: #000; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+}
+
+/* Estilos para o container do vídeo */
+.ratio {
+    max-width: 60%; /* Limita a largura máxima do vídeo */
+    margin: 0 auto; /* Centraliza o vídeo horizontalmente */
+}
+
+/* Media queries para dispositivos menores */
+@media (max-width: 768px) {
+    .ratio {
+        max-width: 95%; /* Aumenta a largura em dispositivos pequenos */
+    }
+}
+
+/* Media queries para dispositivos muito pequenos */
+@media (max-width: 576px) {
+    .ratio {
+        max-width: 100%; /* Ocupa toda a largura em dispositivos muito pequenos */
+    }
+}
+
+/* Ajustando o iframe dentro do .ratio */
+.ratio iframe {
+    width: 100%; /* O iframe preenche 100% do seu contêiner .ratio */
+    height: 100%; /* Altura ajustada automaticamente pela classe .ratio */
+}
+
+.partners .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Isso vai centralizar todas as imagens verticalmente */
+}
+
+.partners img {
+    height: 3em;  /* Altura padrão para todas as imagens */
+    width: auto;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+#sec-api {
+    height: 5em;  /* Ajuste de altura específico para o logo do SEC */
+}
+
+
+.partners img:hover {
+    opacity: 1;  /* Aumenta a opacidade ao passar o mouse */
+}
+
+
+.login-form {
+    width: 300px;
+    padding: 40px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
